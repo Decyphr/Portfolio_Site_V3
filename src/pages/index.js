@@ -14,11 +14,11 @@ const IndexPage = () => (
     <HeadingContainer>
       <Heading>Blake Hartman</Heading>
       <Paragraph>
-      👋 Hey! I'm a front-end web developer and graphic designer. 
-      I create After graduating from college with a degree in Marketing, 
-      I found my passion for digital design, development, creativity, and music 
-      through an addiction to tutorials. I love that we live in this golden age of 
-      information that puts us in control of our personal and professional betterment!
+        👋 Hey! I'm a front-end web developer and graphic designer. 
+        After graduating from college with a degree in Marketing, 
+        I found my passion for digital design, development, creativity, and music 
+        through an addiction to tutorials. I love that we live in this golden age of 
+        information that puts us in control of our personal and professional betterment!
       </Paragraph>
       <FlexContainer>
         <Link to="/projects">
