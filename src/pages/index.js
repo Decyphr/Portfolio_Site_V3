@@ -14,10 +14,11 @@ const IndexPage = () => (
     <HeadingContainer>
       <Heading>Blake Hartman</Heading>
       <Paragraph>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to make a type 
-        specimen book. It has survived not only five Centuries.
+      👋 Hey! I'm a front-end web developer and graphic designer. 
+      I create After graduating from college with a degree in Marketing, 
+      I found my passion for digital design, development, creativity, and music 
+      through an addiction to tutorials. I love that we live in this golden age of 
+      information that puts us in control of our personal and professional betterment!
       </Paragraph>
       <FlexContainer>
         <Link to="/projects">
