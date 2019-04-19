@@ -33,7 +33,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`${site.siteMetadata.title} | %s`}
       meta={[
         {
           name: `description`,
@@ -77,6 +77,9 @@ function SEO({ description, lang, meta, keywords, title }) {
             : []
         )
         .concat(meta)}
+        link={[
+          { rel: "icon", type: "image/png", sizes: "16x16", href: `../images/calling_card.png` },
+        ]}
     />
   )
 }

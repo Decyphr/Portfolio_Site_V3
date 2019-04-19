@@ -1,3 +1,10 @@
+@import url("https://use.typekit.net/yzl2tar.css");
+
+@font-face {
+  font-family: "Gotham-Black";
+  src: url("../fonts/Gotham-Black.woff");
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5,9 +12,15 @@ html {
 }
 body {
   margin: 0;
+  background: #FFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+::selection {
+  background: #B7943A;
+}
+
 article,
 aside,
 details,
