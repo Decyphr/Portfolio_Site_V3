@@ -10,11 +10,16 @@ import { colors, fonts } from './theme'
 class ContactForm extends Component {
   render() {
     return (
-      <FlexContainer>
-        <TextInput type='text' name='email' placeholder='Email' />
-        <TextInput type='text' name='about' placeholder='Project Idea...' />
-        <SubmitBtn type='submit'>Send it</SubmitBtn>
-      </FlexContainer>
+      <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+        <p style={{ visibility: 'hidden', height: 0 }}>
+          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </p>
+        <FlexContainer>
+          <TextInput type='text' name='email' placeholder='Email' />
+          <TextInput type='text' name='about' placeholder='Project Idea...' />
+          <SubmitBtn type='submit'>Send it</SubmitBtn>
+        </FlexContainer>
+      </form>
     )
   }
 }
