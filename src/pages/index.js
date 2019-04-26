@@ -14,7 +14,7 @@ const IndexPage = () => (
     <HeadingContainer>
       <Heading>Blake Hartman</Heading>
       <Paragraph>
-        👋 Hey! I'm a front-end web developer and graphic designer. 
+        <span aria-label="High-Five" role="img">👋</span> Hey! I'm a front-end web developer and graphic designer. 
         After graduating from college with a degree in Marketing, 
         I found my passion for digital design, development, creativity, and music 
         through an addiction to tutorials. I love that we live in this golden age of 
@@ -24,7 +24,7 @@ const IndexPage = () => (
         <Link to="/projects">
           <Button>View Projects</Button>
         </Link>
-        <Link to="/page-2/">
+        <Link to="/projects/">
           <Button>View Resume</Button>
         </Link>
       </FlexContainer>

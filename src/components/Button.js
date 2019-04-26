@@ -1,7 +1,8 @@
 import styled from 'styled-components'
-import { fonts, colors } from './theme';
+import { fonts, colors } from './theme'
 
 export const Button = styled.button`
+  background: transparent;
   width: 275px;
   border: 4px solid ${props => props.color || colors.main};
   font-family: ${fonts.main};
