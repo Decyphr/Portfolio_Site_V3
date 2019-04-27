@@ -5,6 +5,7 @@ import { TextInput, SubmitBtn } from './Inputs'
 
 class ContactForm extends Component {
   state = {
+    name: '',
     email: '',
     project: ''
   }
@@ -17,7 +18,7 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <form name={this.props.name} method="POST" data-netlify="true">
+      <form action="/?no-cache=1" name="contact" method="POST" data-netlify="true">
         <FlexContainer>
           <TextInput
             name='name'
