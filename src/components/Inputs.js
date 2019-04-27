@@ -20,7 +20,7 @@ export const TextInput = styled.input`
   }
 `
 
-export const SubmitBtn = styled.input`
+export const SubmitBtn = styled.button`
   width: 100%;
   background: ${colors.secondary};
   border: 3px solid ${colors.secondary};

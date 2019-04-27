@@ -9,8 +9,8 @@ class ContactForm extends Component {
       <form name="contact" method="POST" data-netlify="true">
         <FlexContainer>
           <TextInput type='text' name='email' placeholder='Email' />
-          <TextInput type='text' name='about' placeholder='Project Idea...'/>
-          <SubmitBtn type='submit' name='submit' value="Send it" />
+          <TextInput type='text' name='project' placeholder='Project Idea...'/>
+          <SubmitBtn type='submit'>Send It</SubmitBtn>
         </FlexContainer>
       </form>
     )
