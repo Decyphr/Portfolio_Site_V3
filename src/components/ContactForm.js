@@ -10,10 +10,8 @@ class ContactForm extends Component {
   }
 
   handleChange = e => {
-    e.preventDefault()
-
-    const { name, value } = e
-    this.setState({ name: value })
+    const { name, value } = e.target
+    this.setState({ [name]: value })
 
   }
 
