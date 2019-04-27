@@ -17,7 +17,7 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <form name="contact" action="POST" data-netlify="true">
+      <form name="contact" method="POST" data-netlify="true">
         <FlexContainer>
           <TextInput
             name='name'
