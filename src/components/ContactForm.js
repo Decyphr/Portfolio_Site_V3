@@ -17,9 +17,9 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <form name="contact" method="POST" data-netlify="true">
+      <form name='project' method='POST' data-netlify='true'>
         <FlexContainer>
-          <TextInput onChange={this.handleChange} type='email' name='email' placeholder='Email' value={this.state.email} />
+          <TextInput onChange={this.handleChange} type="email" name="email" placeholder='Email' value={this.state.email} />
           <TextInput onChange={this.handleChange} type='text' name='project' placeholder='Project Idea...' value={this.state.project}/>
           <SubmitBtn type='submit'>Send It</SubmitBtn>
         </FlexContainer>
