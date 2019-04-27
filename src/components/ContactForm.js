@@ -13,7 +13,7 @@ class ContactForm extends Component {
         <FlexContainer>
           <TextInput type='text' name='email' placeholder='Email' />
           <TextInput type='text' name='about' placeholder='Project Idea...'/>
-          <SubmitBtn type='submit' value="Send it" />
+          <SubmitBtn type='submit' name='submit' value="Send it" />
         </FlexContainer>
       </form>
     )
