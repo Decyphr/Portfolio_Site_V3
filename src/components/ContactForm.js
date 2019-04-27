@@ -17,10 +17,26 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <form name='project' method='POST' data-netlify='true'>
+      <form autoComplete='off' name='contact' action='POST' data-netlify='true'>
         <FlexContainer>
-          <TextInput onChange={this.handleChange} type="email" name="email" placeholder='Email' value={this.state.email} />
-          <TextInput onChange={this.handleChange} type='text' name='project' placeholder='Project Idea...' value={this.state.project}/>
+          <TextInput
+            name="name"
+            onChange={this.handleChange} 
+            type="name" 
+            placeholder='name' 
+          />
+          <TextInput
+            name='email'
+            onChange={this.handleChange} 
+            type='email'
+            placeholder='Email' 
+          />
+          <TextInput 
+            name='project'
+            onChange={this.handleChange} 
+            type='text' 
+            placeholder='Project Idea...'
+          />
           <SubmitBtn type='submit'>Send It</SubmitBtn>
         </FlexContainer>
       </form>
