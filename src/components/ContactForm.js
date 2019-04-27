@@ -6,10 +6,7 @@ import { TextInput, SubmitBtn } from './Inputs'
 class ContactForm extends Component {
   render() {
     return (
-      <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-        <p style={{ visibility: 'hidden', height: 0 }}>
-          <input name="bot-field" />
-        </p>
+      <form name="contact" method="POST" data-netlify="true">
         <FlexContainer>
           <TextInput type='text' name='email' placeholder='Email' />
           <TextInput type='text' name='about' placeholder='Project Idea...'/>
