@@ -11,6 +11,8 @@ class ContactForm extends Component {
   }
 
   handleChange = e => {
+    e.preventDefault()
+
     const { name, value } = e.target
     this.setState({ [name]: value })
 
@@ -18,25 +20,26 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <form name="contact" method="POST?no-cache=1" data-netlify="true">
+      <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+        <input type="text" style={{ visibility: "hidden" }} />
         <FlexContainer>
           <TextInput
-            name='name'
-            onChange={this.handleChange} 
-            type='text'
-            placeholder='Name' 
+            name="name"
+            type="text"
+            onChange={this.handleChange}
+            placeholder="Name"
           />
           <TextInput
-            name='email'
-            onChange={this.handleChange} 
-            type='email'
-            placeholder='Email' 
+            name="email"
+            type="email"
+            onChange={this.handleChange}
+            placeholder="Email"
           />
           <TextInput 
-            name='project'
-            onChange={this.handleChange} 
-            type='text' 
-            placeholder='Project Idea...'
+            name="project"
+            type="text"
+            onChange={this.handleChange}
+            placeholder="Project Idea..."
           />
           <SubmitBtn type='submit'>Send It</SubmitBtn>
         </FlexContainer>
