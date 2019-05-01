@@ -21,7 +21,7 @@ class ContactForm extends Component {
   render() {
     return (
       <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-        <input type="text" style={{ visibility: "hidden" }} />
+        <input name="bot-field" style={{ visibility: "hidden" }} />
         <FlexContainer>
           <TextInput
             name="name"
@@ -34,6 +34,7 @@ class ContactForm extends Component {
             type="email"
             onChange={this.handleChange}
             placeholder="Email"
+            required
           />
           <TextInput 
             name="project"
