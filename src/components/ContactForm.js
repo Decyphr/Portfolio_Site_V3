@@ -18,12 +18,6 @@ class ContactForm extends Component {
     this.setState({ [name]: value })
   }
 
-  onSubmit = (e) => {
-    this.setState({
-      submitted: true
-    })
-  }
-
   render() {
     return (
       <form action="/success" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
