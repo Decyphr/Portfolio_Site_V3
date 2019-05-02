@@ -7,7 +7,8 @@ class ContactForm extends Component {
   state = {
     name: '',
     email: '',
-    project: ''
+    project: '',
+    submitted: false
   }
 
   handleChange = e => {
@@ -15,12 +16,17 @@ class ContactForm extends Component {
 
     const { name, value } = e.target
     this.setState({ [name]: value })
+  }
 
+  onSubmit = (e) => {
+    this.setState({
+      submitted: true
+    })
   }
 
   render() {
     return (
-      <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+      <form action="/success" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
         <input name="bot-field" style={{ visibility: "hidden" }} />
         <FlexContainer>
           <TextInput
