@@ -4,8 +4,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Heading, Paragraph } from "../components/typography";
 import { fonts } from "../components/theme";
-import ProjectGrid from "../components/ProjectGrid";
 import { HeadingContainer } from "../components/FlexContainer";
+import ProjectList from "../components/ProjectList";
 
 const ProjectsPage = ({ data }) => (
   <Layout>
@@ -18,7 +18,7 @@ const ProjectsPage = ({ data }) => (
         <em style={{ fontSize: 14 }}>Frederick Douglass</em>
       </Paragraph>
     </HeadingContainer>
-    <ProjectGrid data={data}/>
+    <ProjectList data={data}/>
     {/* TODO projects grid */}
   </Layout>
 )

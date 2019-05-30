@@ -6,6 +6,7 @@
   "author": "Blake Hartman",
   "dependencies": {
     "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
     "babel-plugin-styled-components": "^1.10.0",
     "dotenv": "^7.0.0",
     "gatsby": "^2.3.16",

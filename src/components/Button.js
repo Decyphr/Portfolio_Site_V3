@@ -34,10 +34,6 @@ export const SocialMedia = styled.a`
 
 export const ProjectLink = styled.a`
   text-decoration: none;
-
-  &:hover {
-    background: #070707;
-  }
 `
 
 export const HomeButton = styled.button`
